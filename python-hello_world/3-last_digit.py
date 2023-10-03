@@ -1,20 +1,13 @@
+#!/usr/bin/python3
 import random
-
-# Generate a random signed number between -10000 and 10000
 number = random.randint(-10000, 10000)
-
-# Extract the last digit of the number
-last_digit = abs(number) % 10
-
-# Determine the appropriate message based on the last digit
-message = f"Last digit of {number} is {last_digit} and"
-
-if last_digit > 5:
-    message += " is greater than 5"
-elif last_digit == 0:
-    message += " is 0"
-else:
-    message += " is less than 6 and not 0"
-
-# Print the final message
-print(message)
+# YOUR CODE HERE
+lastdigit = abs(number) % 10
+#check if the number is negative and negate the lastdigit
+if lastdigit > 5 and number > 0:
+    print("Last digit of", number, "is", lastdigit, "and is greater than 5")
+elif lastdigit == 0:
+    print("Last digit of", number, "is", lastdigit, "and is 0")
+elif lastdigit < 6  and lastdigit != 0 and number > 0:
+    print("Last digit of", number, "is", lastdigit, "and is less than 6 and not 0")
+else : print("Last digit of", number, "is", -lastdigit, "and is less than 6 and not 0")
