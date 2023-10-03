@@ -1,2 +1,3 @@
-for i in range(99):
-    print(f"{i} = 0x{hex(i)[2:].zfill(2)}")
+#hexadecimal printing
+for i in range(0, 99):
+    print('{}'.format(i), f"= 0x{i:x}")
