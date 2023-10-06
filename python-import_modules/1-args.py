@@ -10,7 +10,7 @@ if __name__ == "__main__":
     elif num_arguments == 1:
         print("1 arguments:")
     else:
-        print(f"{num_arguments} arguments")
+        print(f"{num_arguments} arguments:")
 
     if num_arguments > 0:
         for i, arg in enumerate(arguments, start=1):
