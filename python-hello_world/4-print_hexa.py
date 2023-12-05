@@ -1,3 +1,3 @@
 #hexadecimal printing
-for i in range(99):
-    print(f"{i} = 0x{i:x}")
+for i in range(0, 99):
+    print('{}'.format(i), f"= 0x{i:x}")
